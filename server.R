@@ -17,7 +17,7 @@ shinyServer(
             #dev.new(width = 1, height=4)
             image(matrix(as.integer(testing[input$caseNo,-1]), nrow=28)[,28:1], col=gray(12:1/12))
             #dev.off()
-        }, height = 300, width=300)
+        }, height = 200, width=200)
         output$textReal <-  renderText({
             paste0("Real digit is ", testing[input$caseNo,1])
         })
